@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #14279B;
+    font-family: "Dosis", sans-serif;
+    scroll-snap-type: y mandatory;
+}
+
+
+/* Fonts Sizes */
+
+
+h3 {
+    color: #14279B;
+    font-size: 22px;
+    text-align: center;
+    width: 7em;
+}
+
+h4 {
+    color: #B5CFE8;
+    font-size: 22px;
+    text-align: center;
+    width: 7em;
+}
+
+
+/* Hero Session */
+
+
+.container-hero {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.wrapper-hero {
+    display: flex;
+    background-color: #E6E6E6;
+    height: 700px;
+    margin: 100px 0px;
+
+    background: #E6E6E6;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+
+.wrapper-hero p{
+    position: relative;
+    left: 340px;
+    top: 150px;
+    width: 620px;
+    font-size: 32px;
+    color: #14279B;
+    text-align: center;
+}
+
+.wrapper-hero #star-hero {
+    position: relative;
+    left: 120px;
+}
+
+
+/* Social Icons */
+
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    top: 35vh;
+    right: 160px;
+    gap: 50px 100px;
+    width: 400px;
+}
+
+.social-icons a {
+    width: 62px;
+    height: 62px;
+    transition: all ease-in-out 100ms;
+}
+
+/* Animes Section */
+
+
+.container-animes {
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.wrapper-animes {
+    display: flex;
+    position: relative;
+    width: 93%;
+    height: 800px;
+
+    background: #E6E6E6;
+    box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 42.1669px 0px 0px 42.1669px;
+}
+
+.wrapper-animes #star-animes {
+    position: relative;
+    left: 1000px;
+}
+
+.animes-container{
+    position: relative;
+    right:560px;
+    top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    flex-direction: column;
+    gap: 25px 100px;
+}
+
+.subanimes-container img {
+    box-shadow: 0px 0px 0px 1.40556px #FFFFFF;
+    border-radius: 14.0556px;
+    transition: all ease-in-out 200ms;
+}
+
+.subanimes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 365px;
+}
+
+.bg-img-animes {
+    display: flex;
+    background-color: #2400FF;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 14.0556px;
+}
+
+
+/* Games Section */
+
+
+.container-games {
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #B5CFE8;
+    height: 100vh;
+}
+
+.wrapper-games {
+    display: flex;
+    position: relative;
+    width: 93%;
+    height: 800px;
+
+    background: #E6E6E6;
+    box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 42.1669px 42.1669px 0px;
+}
+
+.wrapper-games #star-games {
+    position: relative;
+    left: 120px;
+}
+
+.games-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-count: 2;
+    gap: 10% 100%;
+    left: 300px;
+    top: 100px;
+}
+
+.subgames-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.subgames-container img{
+    transition: all ease-in-out 50ms;
+}
+
+.subgames-container img:hover {
+    transform: scale(1.2);
+}
+
+#rainbowsixsiege {
+    border-radius: 50%;
+}
+
+.bg-img-games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: #14279B;
+    border-radius: 50%;
+}
+
+
+/* Musics */
+
+
+.container-musics {
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.wrapper-musics {
+    display: flex;
+    position: relative;
+    width: 93%;
+    height: 800px;
+
+    background: #E6E6E6;
+    box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 42.1669px 0px 0px 42.1669px;
+}
+
+.wrapper-musics #star-musics {
+    position: relative;
+    left: 1000px;
+}
+
+.musics-container {
+    position: relative;
+    right: 500px;
+    top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-count: 2;
+    gap: 0.8in 2in;
+}
+
+.submusics-container h3 {
+    width: auto;
+}
+
+.submusics-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.submusics-container img {
+    transition: all ease-in-out 200ms;
+}
+
+.desc-music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-img-musics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2400FF;
+    border-radius: 14.0556px;
+    padding: 10px;
+}
+
+.bg-img-musics img {
+    box-shadow: 0px 0px 0px 1.40556px #FFFFFF;
+    border-radius: 14.0556px;
+}
+
+.playlist-btn-container {
+    margin-top: 110px;
+}
+
+.bg-playlist-btn {
+    display: flex;
+    background-color: #14279B;
+    border-radius: 14.0556px;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+/* Hover Effect Section */
+
+.subanimes-container img:hover, .submusics-container img:hover, .social-icons a:hover {
+    transform: scale(1.12);
+}
+
+#rainbowsixsiege:hover {
+    transform: scale(1.08);
+    background-color: #464646;
+}
