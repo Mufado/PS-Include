@@ -6,12 +6,13 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
 }
 
 body {
     background-color: #14279B;
     font-family: "Dosis", sans-serif;
-    scroll-snap-type: y mandatory;
 }
 
 
@@ -38,7 +39,6 @@ h4 {
 
 .container-hero {
     height: 100vh;
-    scroll-snap-align: start;
 }
 
 .wrapper-hero {
