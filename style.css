@@ -27,6 +27,7 @@ h1 {
     font-size: 100px;
     top: 110px;
     animation: rotate-title 1s ease-in-out infinite alternate;
+    cursor: default;
 }
 
 h3 {
