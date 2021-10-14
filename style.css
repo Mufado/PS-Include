@@ -16,8 +16,17 @@ body {
 }
 
 
+
 /* Fonts Sizes */
 
+
+
+h1 {
+    position: absolute;
+    font-family: "Permanent Marker", cursive;
+    font-size: 100px;
+    top: 110px;
+}
 
 h3 {
     color: #14279B;
@@ -34,7 +43,9 @@ h4 {
 }
 
 
+
 /* Hero Session */
+
 
 
 .container-hero {
@@ -44,8 +55,10 @@ h4 {
 .wrapper-hero {
     display: flex;
     background-color: #E6E6E6;
+    justify-content: center;
     height: 700px;
     margin: 100px 0px;
+    column-gap: 300px;
 
     background: #E6E6E6;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
@@ -54,7 +67,7 @@ h4 {
 
 .wrapper-hero p{
     position: relative;
-    left: 340px;
+    left: 650px;
     top: 150px;
     width: 620px;
     font-size: 32px;
@@ -62,13 +75,10 @@ h4 {
     text-align: center;
 }
 
-.wrapper-hero #star-hero {
-    position: relative;
-    left: 120px;
-}
 
 
 /* Social Icons */
+
 
 
 .social-icons {
@@ -88,7 +98,111 @@ h4 {
     transition: all ease-in-out 100ms;
 }
 
+
+
+/* Square's Config */
+
+
+
+.star-hero-container {
+    position: relative;
+    top: 120px;
+    left: 120px;
+}
+
+.star-animes-container, .star-musics-container{
+    position: relative;
+    top: 200px;
+    left: 1140px;
+}
+
+.star-games-container {
+    position: relative;
+    top: 200px;
+    left: 180px;
+}
+
+.star-hero-container .square {
+    position: absolute;
+    height: 460px;
+    width: 460px;
+    border-radius: 3%;
+}
+
+.square {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 3%;
+}
+
+.star-hero-container h1 {
+    position: absolute;
+    color: #14279B;
+    font-size: 120px;
+    top: 120px;
+    left: 60px;
+    animation: rotate-title 1s ease-in-out infinite alternate;
+}
+
+.star-animes-container h1 {
+    color: #E6E6E6;
+    left: 30px;
+}
+
+.star-games-container h1 {
+    color: #14279B;
+    left: 50px;
+}
+
+.star-musics-container h1 {
+    color: #E6E6E6;
+}
+
+.star-hero-container .square:nth-child(1) {
+    background-color: #14279B;
+    animation: pos-crazyrotate-square 20s cubic-bezier(.11,.38,.71,.37) infinite alternate;
+}
+
+.star-hero-container .square:nth-child(2) {
+    background-color: #B5CFE8;
+    animation: pos-crazyrotate-square 30s cubic-bezier(.11,.38,.71,.37) infinite alternate;
+}
+
+.star-animes-container .square:nth-child(1) {
+    background-color: #B5CFE8;
+    animation: pos-fullrotate-square 10s linear infinite;
+}
+
+.star-animes-container .square:nth-child(2) {
+    background-color: #14279B;
+    animation: neg-fullrotate-square 10s linear infinite;
+}
+
+.star-games-container .square:nth-child(1) {
+    background-color: #14279B;
+    animation: neg-fullrotate-square 10s linear infinite;
+}
+
+.star-games-container .square:nth-child(2) {
+    background-color: #B5CFE8;
+    animation: pos-fullrotate-square 10s linear infinite;
+}
+
+.star-musics-container .square:nth-child(1) {
+    background-color: #B5CFE8;
+    animation: pos-fullrotate-square 10s linear infinite;
+}
+
+.star-musics-container .square:nth-child(2) {
+    background-color: #14279B;
+    animation: neg-fullrotate-square 10s linear infinite;
+}
+
+
+
 /* Animes Section */
+
 
 
 .container-animes {
@@ -110,14 +224,9 @@ h4 {
     border-radius: 42.1669px 0px 0px 42.1669px;
 }
 
-.wrapper-animes #star-animes {
-    position: relative;
-    left: 1000px;
-}
-
 .animes-container{
     position: relative;
-    right:560px;
+    left: 100px;
     top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -150,7 +259,9 @@ h4 {
 }
 
 
+
 /* Games Section */
+
 
 
 .container-games {
@@ -185,7 +296,7 @@ h4 {
     flex-direction: column;
     column-count: 2;
     gap: 10% 100%;
-    left: 300px;
+    left: 900px;
     top: 100px;
 }
 
@@ -220,7 +331,9 @@ h4 {
 }
 
 
+
 /* Musics */
+
 
 
 .container-musics {
@@ -242,14 +355,9 @@ h4 {
     border-radius: 42.1669px 0px 0px 42.1669px;
 }
 
-.wrapper-musics #star-musics {
-    position: relative;
-    left: 1000px;
-}
-
 .musics-container {
     position: relative;
-    right: 500px;
+    left: 100px;
     top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -296,6 +404,7 @@ h4 {
 
 .playlist-btn-container {
     margin-top: 110px;
+    text-decoration: none;
 }
 
 .bg-playlist-btn {
@@ -305,15 +414,60 @@ h4 {
     align-items: center;
     height: 100%;
     padding: 0px 10px;
+    transition: all ease-in-out 300ms;
 }
 
-/* Hover Effect Section */
+
+
+/* Hover & Keyframes Section */
+
+
 
 .subanimes-container img:hover, .submusics-container img:hover, .social-icons a:hover {
     transform: scale(1.12);
 }
 
+.bg-playlist-btn:hover {
+    opacity: 0.8;
+}
+
 #rainbowsixsiege:hover {
     transform: scale(1.08);
     background-color: #464646;
+}
+
+@keyframes rotate-title {
+    0%{
+        transform: rotateZ(-12deg);
+    }
+    100%{
+        transform: rotateZ(12deg);
+    }
+}
+
+@keyframes pos-crazyrotate-square {
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(350deg);
+    }
+    75%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes neg-fullrotate-square {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes pos-fullrotate-square {
+    to{
+        transform: rotate(360deg);
+    }
 }
